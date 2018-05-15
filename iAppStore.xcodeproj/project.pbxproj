@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		612C133020A9D71900092559 /* Apps.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 612C132F20A9D71900092559 /* Apps.storyboard */; };
+		612C133220A9D75E00092559 /* Today.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 612C133120A9D75E00092559 /* Today.storyboard */; };
+		612C133420A9D78300092559 /* Updates.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 612C133320A9D78300092559 /* Updates.storyboard */; };
+		612C133620A9D78C00092559 /* Games.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 612C133520A9D78C00092559 /* Games.storyboard */; };
+		612C133820A9D79600092559 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 612C133720A9D79600092559 /* Search.storyboard */; };
+		612C133A20AB0CFF00092559 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612C133920AB0CFF00092559 /* TodayViewController.swift */; };
 		6141209620A9CC2200FE97D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6141209520A9CC2200FE97D3 /* AppDelegate.swift */; };
 		6141209820A9CC2200FE97D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6141209720A9CC2200FE97D3 /* ViewController.swift */; };
 		6141209B20A9CC2200FE97D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6141209920A9CC2200FE97D3 /* Main.storyboard */; };
@@ -15,6 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		612C132F20A9D71900092559 /* Apps.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Apps.storyboard; sourceTree = "<group>"; };
+		612C133120A9D75E00092559 /* Today.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Today.storyboard; sourceTree = "<group>"; };
+		612C133320A9D78300092559 /* Updates.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Updates.storyboard; sourceTree = "<group>"; };
+		612C133520A9D78C00092559 /* Games.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Games.storyboard; sourceTree = "<group>"; };
+		612C133720A9D79600092559 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		612C133920AB0CFF00092559 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		6141209220A9CC2200FE97D3 /* iAppStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iAppStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6141209520A9CC2200FE97D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6141209720A9CC2200FE97D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +47,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		612C133B20AB0D1F00092559 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				612C133520A9D78C00092559 /* Games.storyboard */,
+				612C133720A9D79600092559 /* Search.storyboard */,
+				612C133320A9D78300092559 /* Updates.storyboard */,
+				612C132F20A9D71900092559 /* Apps.storyboard */,
+				612C133C20AB0D2D00092559 /* Today */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		612C133C20AB0D2D00092559 /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				612C133120A9D75E00092559 /* Today.storyboard */,
+				612C133920AB0CFF00092559 /* TodayViewController.swift */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
 		6141208920A9CC2200FE97D3 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +93,7 @@
 				6141209C20A9CC2400FE97D3 /* Assets.xcassets */,
 				6141209E20A9CC2400FE97D3 /* LaunchScreen.storyboard */,
 				614120A120A9CC2400FE97D3 /* Info.plist */,
+				612C133B20AB0D1F00092559 /* ViewControllers */,
 			);
 			path = iAppStore;
 			sourceTree = "<group>";
@@ -123,7 +157,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				614120A020A9CC2400FE97D3 /* LaunchScreen.storyboard in Resources */,
+				612C133220A9D75E00092559 /* Today.storyboard in Resources */,
 				6141209D20A9CC2400FE97D3 /* Assets.xcassets in Resources */,
+				612C133620A9D78C00092559 /* Games.storyboard in Resources */,
+				612C133420A9D78300092559 /* Updates.storyboard in Resources */,
+				612C133020A9D71900092559 /* Apps.storyboard in Resources */,
+				612C133820A9D79600092559 /* Search.storyboard in Resources */,
 				6141209B20A9CC2200FE97D3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +176,7 @@
 			files = (
 				6141209820A9CC2200FE97D3 /* ViewController.swift in Sources */,
 				6141209620A9CC2200FE97D3 /* AppDelegate.swift in Sources */,
+				612C133A20AB0CFF00092559 /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
