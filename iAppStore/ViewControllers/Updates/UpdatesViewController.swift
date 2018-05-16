@@ -11,10 +11,15 @@ import UIKit
 class UpdatesViewController: UIViewController {
 
   @IBOutlet weak var tableView: UITableView!
+  
+  let refreshControl = UIRefreshControl()
+  
+  
   override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    tableView.refreshControl = refreshControl
     }
 
     override func didReceiveMemoryWarning() {
