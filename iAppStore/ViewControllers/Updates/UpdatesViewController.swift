@@ -19,8 +19,15 @@ class UpdatesViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    refreshControl.addTarget(self, action: #selector(refreshAction), for: .valueChanged)
     tableView.refreshControl = refreshControl
     }
+  
+  @objc func refreshAction() {
+    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+      self.tableView.refreshControl?.endRefreshing()
+    }
+  }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
