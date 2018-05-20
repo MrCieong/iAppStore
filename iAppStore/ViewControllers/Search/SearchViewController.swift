@@ -18,6 +18,7 @@ class SearchViewController: UIViewController {
         // Do any additional setup after loading the view.
       navigationItem.searchController = searchController
       navigationItem.hidesSearchBarWhenScrolling = false
+      navigationController?.navigationBar.shadowImage = UIImage()
     }
 
     override func didReceiveMemoryWarning() {

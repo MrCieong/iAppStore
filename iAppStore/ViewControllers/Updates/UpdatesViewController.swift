@@ -8,23 +8,20 @@
 
 import UIKit
 
-class UpdatesViewController: UIViewController {
+class UpdatesViewController: UITableViewController {
 
-  @IBOutlet weak var tableView: UITableView!
-  
-  let refreshControl = UIRefreshControl()
-  
   
   override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    refreshControl.addTarget(self, action: #selector(refreshAction), for: .valueChanged)
-    tableView.refreshControl = refreshControl
+    
+    refreshControl = UIRefreshControl()
+    refreshControl?.addTarget(self, action: #selector(refreshAction), for: .valueChanged)
     }
   
   @objc func refreshAction() {
-    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
       self.tableView.refreshControl?.endRefreshing()
     }
   }
