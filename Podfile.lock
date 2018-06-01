@@ -1,0 +1,18 @@
+PODS:
+  - R.swift (4.0.0):
+    - R.swift.Library (~> 4.0.0)
+  - R.swift.Library (4.0.0)
+  - SwiftLint (0.23.1)
+
+DEPENDENCIES:
+  - R.swift
+  - SwiftLint
+
+SPEC CHECKSUMS:
+  R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
+  R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
+  SwiftLint: 1b670ce79284c76520f84060e87d645078fd32fa
+
+PODFILE CHECKSUM: a7e5832ce5f0765a9fc71c2a21dfd444f7186b50
+
+COCOAPODS: 1.3.1

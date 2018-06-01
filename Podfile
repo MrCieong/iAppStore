@@ -6,5 +6,6 @@ target 'iAppStore' do
   use_frameworks!
 
   # Pods for iAppStore
-
+  pod 'R.swift'
+  pod 'SwiftLint'
 end
